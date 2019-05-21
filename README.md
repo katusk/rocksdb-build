@@ -1,6 +1,6 @@
 # Building RocksDB Native Nuget Packages
 
-We are currently building for Windows only. The RocksDB project can be found at:
+This repository contains a few simple script files that fetch a specific (currently hardwired) RocksDB source release and build NuGet packages based on that. We are currently building for Windows only. The RocksDB project can be found at:
 * [https://rocksdb.org/](https://rocksdb.org/)
 
 ## On Windows 10

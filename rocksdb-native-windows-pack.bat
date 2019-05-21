@@ -17,9 +17,12 @@ SET NUGET=%2
 REM Build commands
 REM --------------
 CD %WORKSPACE%
-powershell -Command "Invoke-WebRequest https://github.com/facebook/rocksdb/archive/v6.0.2.zip -OutFile rocksdb-6.0.2.zip"
-powershell -Command "Expand-Archive rocksdb-6.0.2.zip -DestinationPath ."
-rocksdb-native-windows-build.bat %WORKSPACE% release
-rocksdb-native-windows-build.bat %WORKSPACE% debug
-%NUGET% pack rocksdb-native-windows-static.nuspec
+RM %WORKSPACE%\rocksdb-6.0.2.zip
+RMDIR /S /Q %WORKSPACE%\rocksdb-6.0.2
+POWERSHELL -Command "Invoke-WebRequest https://github.com/facebook/rocksdb/archive/v6.0.2.zip -OutFile %WORKSPACE%\rocksdb-6.0.2.zip"
+POWERSHELL -Command "Expand-Archive rocksdb-6.0.2.zip -DestinationPath %WORKSPACE%"
+%WORKSPACE%\rocksdb-native-windows-build.bat %WORKSPACE% release
+%WORKSPACE%\rocksdb-native-windows-build.bat %WORKSPACE% debug
+CD %WORKSPACE%
+%NUGET% pack %WORKSPACE%\rocksdb-native-windows-static.nuspec
 CD %WORKSPACE%
