@@ -7,7 +7,7 @@ NuGet packages are based on specific versions of the RocksDB source code found a
 * [https://github.com/facebook/rocksdb/releases](https://github.com/facebook/rocksdb/releases)
 
 ## On Windows 10
-You are going to need either the Visual Studio Build Tools or a Visual Studio installation with CMake support, and the NuGet CLI. Then you can run e.g. inside a `x64 Native Tools Command Prompt for VS 2017` the following commands for example:
+You are going to need either the Visual Studio Build Tools or a Visual Studio installation with CMake support, and the [NuGet CLI](https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools#nugetexe-cli). Then you can run e.g. inside a `x64 Native Tools Command Prompt for VS 2017` the following commands for example:
 
 ```bat
 SET WORKSPACE=C:\workspace\rocksdb-build
