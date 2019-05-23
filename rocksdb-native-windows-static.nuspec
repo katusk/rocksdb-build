@@ -18,6 +18,8 @@
   <files>
     <file src="rocksdb-6.0.2\CMakeBuilds\install\rocksdb-6.0.2-x64-windows-static_shared-debug\lib\rocksdb.lib" target="build\native\lib\x64\debug" />
     <file src="rocksdb-6.0.2\CMakeBuilds\install\rocksdb-6.0.2-x64-windows-static_shared-release\lib\rocksdb.lib" target="build\native\lib\x64\release" />
+    <file src="rocksdb-6.0.2\CMakeBuilds\build\rocksdb-6.0.2-x64-windows-static_shared-debug\Debug\rocksdb.pdb" target="build\native\lib\x64\debug" />
+    <file src="rocksdb-6.0.2\CMakeBuilds\build\rocksdb-6.0.2-x64-windows-static_shared-release\Release\rocksdb.pdb" target="build\native\lib\x64\release" />
     <file src="rocksdb-6.0.2\include\**.h" target="build\native\include" />
     <file src="rocksdb-native-windows-static.targets" target="build\native" />
   </files>
