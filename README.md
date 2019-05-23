@@ -18,6 +18,9 @@ rocksdb-native-windows-pack.bat %WORKSPACE% %NUGET%
 
 If everything went well your resulting `rocksdb-native-windows-static.x.y.z.nupkg` will be placed at `C:\workspace\rocksdb-build`. This specific package is intended for static linking only, i.e. no `.dll` is placed in the resulting `nupkg`. See `rocksdb-native-windows-build.bat` called by `rocksdb-native-windows-pack.bat` for more details.
 
+### Reference
+* [https://github.com/facebook/rocksdb/wiki/Building-on-Windows](https://github.com/facebook/rocksdb/wiki/Building-on-Windows)
+
 ### Releases
 * https://www.nuget.org/packages/rocksdb-native-windows-static
 
