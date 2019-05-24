@@ -23,6 +23,4 @@ POWERSHELL -Command "Invoke-WebRequest https://github.com/facebook/rocksdb/archi
 POWERSHELL -Command "Expand-Archive rocksdb-6.0.2.zip -DestinationPath %WORKSPACE%"
 CALL %WORKSPACE%\rocksdb-native-windows-build.bat %WORKSPACE% release
 CALL %WORKSPACE%\rocksdb-native-windows-build.bat %WORKSPACE% debug
-CD %WORKSPACE%
-%NUGET% pack %WORKSPACE%\rocksdb-native-windows-static.nuspec
-CD %WORKSPACE%
+%NUGET% pack %WORKSPACE%\rocksdb-native-windows-static-portable.nuspec

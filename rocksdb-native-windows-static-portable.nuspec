@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>rocksdb-native-windows-static</id>
+    <id>rocksdb-native-windows-static-portable</id>
     <version>6.0.2</version>
-    <title>rocksdb-native-windows-static</title>
+    <title>rocksdb-native-windows-static-portable</title>
     <authors>Kristof Katus</authors>
     <owners>Kristof Katus</owners>
     <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
@@ -11,9 +11,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Native RocksDB .lib files intended to be statically linked to a native project.</summary>
     <description>Native RocksDB .lib files intended to be statically linked to a native project.</description>
-    <releaseNotes>https://github.com/facebook/rocksdb/releases/tag/v6.0.2</releaseNotes>
+    <releaseNotes>https://github.com/katusk/rocksdb-build/releases/tag/rocksdb-native-windows-static-portable.6.0.2.nupkg</releaseNotes>
     <copyright>Copyright 2019</copyright>
-    <tags>rocksdb persistent key-value store windows native static</tags>
+    <tags>rocksdb persistent key-value store windows native static portable</tags>
   </metadata>
   <files>
     <file src="rocksdb-6.0.2\CMakeBuilds\install\rocksdb-6.0.2-x64-windows-static_shared-debug\lib\rocksdb.lib" target="build\native\lib\x64\debug" />
@@ -21,6 +21,6 @@
     <file src="rocksdb-6.0.2\CMakeBuilds\build\rocksdb-6.0.2-x64-windows-static_shared-debug\Debug\rocksdb.pdb" target="build\native\lib\x64\debug" />
     <file src="rocksdb-6.0.2\CMakeBuilds\build\rocksdb-6.0.2-x64-windows-static_shared-release\Release\rocksdb.pdb" target="build\native\lib\x64\release" />
     <file src="rocksdb-6.0.2\include\**.h" target="build\native\include" />
-    <file src="rocksdb-native-windows-static.targets" target="build\native" />
+    <file src="rocksdb-native-windows-static-portable.targets" target="build\native" />
   </files>
 </package>
